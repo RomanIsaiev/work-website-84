@@ -1,20 +1,997 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>ГРОШОВА СВІДОМІСТЬ</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="short-info-container">
+          <p class="short-info-text">Онлайн-курс з персональним розбором</p>
+          <p class="short-info-text">
+            Старт <span id="dateElement"></span> <span id="monthElement"></span>
+          </p>
+        </div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <h1 class="title">ГРОШОВА СВІДОМІСТЬ</h1>
+          <p class="subtitle">Обери шлях до свого ІЗОБІЛІЯ</p>
+          <picture
+            ><source
+              srcset="
+                ./src/img/hero/author-1x.png 1x,
+                ./src/img/hero/author-2x.png 2x
+              "
+              width="100%"
+              height="auto" />
+            <img
+              class="hero-img"
+              src="./src/img/hero/author-1x.png"
+              alt="author"
+              width="100%"
+              height="auto"
+          /></picture>
+          <p class="desc">
+            Розблокуй свій грошовий потенціал без довгих сесій і складних
+            методик
+          </p>
+          <a class="btn blue-btn" href="">почати</a>
+          <p class="start-text">
+            Почни свою фінансову трансформацію вже зараз
+            <span>зі знижкою 90% – тільки до кінця дня!</span>
+          </p>
+          <div id="countdown-one" class="countdown">
+            <div class="countdown-number">
+              <span class="hours countdown-time"></span>
+              <div class="countdown-label hours-label"></div>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+              <div class="countdown-label minutes-label"></div>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+              <div class="countdown-label seconds-label"></div>
+            </div>
+          </div>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="24"
+                  height="25" />
+                <img
+                  class="check-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check"
+                  width="24"
+                  height="25"
+              /></picture>
+              Зрозумієте фінансові блоки за 4 дні, які обмежують ваші доходи
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="24"
+                  height="25" />
+                <img
+                  class="check-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check"
+                  width="24"
+                  height="25"
+              /></picture>
+              Методика зцілення травм працює легко й глибоко
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="24"
+                  height="25" />
+                <img
+                  class="check-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check"
+                  width="24"
+                  height="25"
+              /></picture>
+              Ваша впевненість зросте вже після курсу
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="24"
+                  height="25" />
+                <img
+                  class="check-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check"
+                  width="24"
+                  height="25"
+              /></picture>
+              Психологія, езотерика, медитації - швидкий і тривалий ефект
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="24"
+                  height="25" />
+                <img
+                  class="check-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check"
+                  width="24"
+                  height="25"
+              /></picture>
+              Покращите фінансову ситуацію за короткий термін
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="bonuses">
+        <div class="container">
+          <h2 class="title">БОНУСИ</h2>
+          <p class="desc">
+            Отримайте бонуси на суму <span>понад 2000 грн БЕЗКОШТОВНО</span>
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="156"
+                  height="130" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="130"
+              /></picture>
+              <p class="text">Чек-лист “7 кроків до фінансової свободи”</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-02-1x.png 1x,
+                    ./src/img/bonuses/bonus-02-2x.png 2x
+                  "
+                  width="156"
+                  height="130" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-02-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="130"
+              /></picture>
+              <p class="text">
+                Чек-лист з 50 обмежуючих переконань, які блокують фінансовий
+                потік
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-03-1x.png 1x,
+                    ./src/img/bonuses/bonus-03-2x.png 2x
+                  "
+                  width="156"
+                  height="130" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-03-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="130"
+              /></picture>
+              <p class="text">Доступ до закритого чату з експертом</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-04-1x.png 1x,
+                    ./src/img/bonuses/bonus-04-2x.png 2x
+                  "
+                  width="156"
+                  height="130" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-04-1x.png"
+                  alt="bonus"
+                  width="156"
+                  height="130"
+              /></picture>
+              <p class="text">
+                Для перших 10 учасників: можливість пройти персональний
+                Діагностичний розбір вашого запиту
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="course-for">
+        <div class="container">
+          <h2 class="title">Курс ідеально</h2>
+          <p class="subtitle">підходить для:</p>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/course-for/for-01-1x.png 1x,
+                    ./src/img/course-for/for-01-2x.png 2x
+                  "
+                  width="110"
+                  height="120" />
+                <img
+                  class="check-image"
+                  src="./src/img/course-for/for-01-1x.png"
+                  alt="check"
+                  width="110"
+                  height="120"
+              /></picture>
+              <div class="text-box">
+                <p class="item-title">Жінок,</p>
+                <p class="item-text">
+                  які відчувають, що їхній фінансовий потенціал не розкритий в
+                  достатній мірі
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/course-for/for-02-1x.png 1x,
+                    ./src/img/course-for/for-02-2x.png 2x
+                  "
+                  width="110"
+                  height="120" />
+                <img
+                  class="check-image"
+                  src="./src/img/course-for/for-02-1x.png"
+                  alt="check"
+                  width="110"
+                  height="120"
+              /></picture>
+              <div class="text-box">
+                <p class="item-title">Експертам,</p>
+                <p class="item-text">
+                  які відчувають саботаж або страх перед масштабуванням своїх
+                  проектів
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/course-for/for-03-1x.png 1x,
+                    ./src/img/course-for/for-03-2x.png 2x
+                  "
+                  width="110"
+                  height="120" />
+                <img
+                  class="check-image"
+                  src="./src/img/course-for/for-03-1x.png"
+                  alt="check"
+                  width="110"
+                  height="120"
+              /></picture>
+              <div class="text-box">
+                <p class="item-title">Підприємців,</p>
+                <p class="item-text">
+                  які відчувають, що гроші приходять важко, а великі доходи це
+                  не для їх
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/course-for/for-04-1x.png 1x,
+                    ./src/img/course-for/for-04-2x.png 2x
+                  "
+                  width="110"
+                  height="120" />
+                <img
+                  class="check-image"
+                  src="./src/img/course-for/for-04-1x.png"
+                  alt="check"
+                  width="110"
+                  height="120"
+              /></picture>
+              <div class="text-box">
+                <p class="item-title">Для тих, хто хоче більше заробляти,</p>
+                <p class="item-text">
+                  але внутрішні сумніви і страхи стримують ваш розвиток
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-author">
+        <div class="container">
+          <h2 class="title">Про автора</h2>
+          <picture
+            ><source
+              srcset="
+                ./src/img/about-author/author-1x.png 1x,
+                ./src/img/about-author/author-2x.png 2x
+              "
+              width="280"
+              height="auto" />
+            <img
+              class="author-image"
+              src="./src/img/about-author/author-1x.png"
+              alt="author"
+              width="280"
+              height="auto"
+          /></picture>
+          <div class="wrapper">
+            <img
+              class="wrapper-image"
+              src="./src/img/about-author/qoute-1x.png"
+              alt="decotaion"
+              width="23"
+            />
+            <p class="wrapper-text">
+              Моя місія - допомогти кожному відкрити свій шлях до фінансової
+              свободи
+            </p>
+          </div>
+          <h3 class="author-name">Анна Аріста</h3>
+          <p class="author-desc">
+            магістр психології, психолог-езотерик з досвідом понад 7 років
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              <span>Щаслива дружина та мати</span> 4-х дітей
+            </li>
+            <li class="list-item">
+              <span>Автор унікального підходу “Метод Аріста”,</span> який
+              поєднує регресивний гіпноз, езотерику та динамічні медитації
+            </li>
+            <li class="list-item">
+              <span
+                >Автор унікальної програми персонального супроводу “Інжиніринг
+                Душі”:</span
+              >
+              Як знайти гармонію у собі і світі”, яка допомогла багатьом
+              клієнтам змінити їхнє життя
+            </li>
+            <li class="list-item">
+              <span>Експерт із трансформаціі фінанасових переконань,</span>
+              заснованої на досвіді роботи з підсвідомістю, емоціями, родовими
+              сценаріями та енергетичними практиками
+            </li>
+            <li class="list-item">
+              <span
+                >Її методи базуються на глибокій роботі з підсвідомістю,</span
+              >
+              травмами минулих життів і енергетичними блоками
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-course">
+        <div class="container">
+          <h2 class="title">про курс</h2>
+          <div class="list-box">
+            <img
+              class="item-arrow arrow-01"
+              src="./src/img/about-course/arrow-down.svg"
+              alt="arrow"
+            />
+            <img
+              class="item-arrow arrow-02"
+              src="./src/img/about-course/arrow-down.svg"
+              alt="arrow"
+            />
+            <img
+              class="item-arrow arrow-03"
+              src="./src/img/about-course/arrow-down.svg"
+              alt="arrow"
+            />
+            <img
+              class="item-arrow arrow-04"
+              src="./src/img/about-course/arrow-down.svg"
+              alt="arrow"
+            />
+            <ul class="list">
+              <li class="list-item">
+                <span class="item-number">1</span>
+                <p class="item-title">Формат</p>
+                <p class="item-text">
+                  4 відеоуроки до 15 хвилин + практика. Доступні у зручний для
+                  вас час
+                </p>
+              </li>
+              <li class="list-item">
+                <span class="item-number">2</span>
+                <p class="item-title">Бонуси:</p>
+                <ul class="bonus-list">
+                  <li class="bonus-item">
+                    Чек-лист з 50 обмежуючих переконань, які блокують фінансовий
+                    потік
+                  </li>
+                  <li class="bonus-item">
+                    Чек-лист “7 кроків до фінансової свободи”
+                  </li>
+                </ul>
+              </li>
+              <li class="list-item">
+                <span class="item-number">3</span>
+                <p class="item-title">Доступ</p>
+                <p class="item-text">до закритого чату з експертом</p>
+              </li>
+              <li class="list-item">
+                <span class="item-number">4</span>
+                <p class="item-title">Для перших 10 учасників</p>
+                <p class="item-text">
+                  можливість пройти Діагностичний розбір вашого запиту
+                </p>
+              </li>
+              <li class="list-item">
+                <span class="item-number">5</span>
+                <p class="item-title">Тривалість доступу:</p>
+                <p class="item-text">60 днів</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="program">
+        <div class="container">
+          <h2 class="title">Програма</h2>
+          <p class="subtitle">курсу</p>
+
+          <ul class="list">
+            <li class="list-item">
+              <span class="item-number">00</span>
+              <div class="item-text-box">
+                <p class="lesson-number">[ урок 0 ]</p>
+                <p class="item-text">
+                  ЯК ЗМІНИТИ ОБМЕЖУЮЧІ ПЕРЕКОНАННЯ І ВІДКРИТИ ШЛЯХ ДО ФІНАНСОВОЇ
+                  СВОБОДИ ЗА 21 ДЕНЬ
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">01</span>
+              <div class="item-text-box">
+                <p class="lesson-number">[ урок 1 ]</p>
+                <p class="item-text">
+                  Знайомство з егергетикою грошей і виявлення фінансових блоків
+                  + практика
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">02</span>
+              <div class="item-text-box">
+                <p class="lesson-number">[ урок 2 ]</p>
+                <p class="item-text">
+                  Зцілення дитячих травм і переконань про гроші + енергетична
+                  практика
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">03</span>
+              <div class="item-text-box">
+                <p class="lesson-number">[ урок 3 ]</p>
+                <p class="item-text">
+                  Формування нових переконань і відкриття грошового каналу +
+                  енернетична практика
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">04</span>
+              <div class="item-text-box">
+                <p class="lesson-number">[ урок 4 ]</p>
+                <p class="item-text">
+                  Активування точки багатства: як запрограмувати підсвідомість
+                  на достаток.+ енергетична практика
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="join-wrapper">
+            <p class="join-title">Приєднайтесь до кінця доби</p>
+            <p class="join-subtitle">за кращою ціною та отримуйте БОНУСИ</p>
+            <p class="price"><span>1990 грн</span> 199 грн</p>
+            <a class="btn btn-white" href="">Приєднатися</a>
+          </div>
+        </div>
+      </section>
+      <section class="bonuses-again">
+        <div class="container">
+          <h2 class="title">БОНУСИ</h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="24"
+                  height="25" />
+                <img
+                  class="check-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check"
+                  width="24"
+                  height="25"
+              /></picture>
+              <span>Чек-лист</span> з 50 обмежуючих переконань, які блокують
+              фінансовий потік
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="24"
+                  height="25" />
+                <img
+                  class="check-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check"
+                  width="24"
+                  height="25"
+              /></picture>
+              <span>Чек-лист</span> “7 кроків до фінансової свободи”
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="24"
+                  height="25" />
+                <img
+                  class="check-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check"
+                  width="24"
+                  height="25"
+              /></picture>
+              <span>Доступ до закритого чату</span> з експертом
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/check-1x.png 1x,
+                    ./src/img/hero/check-2x.png 2x
+                  "
+                  width="24"
+                  height="25" />
+                <img
+                  class="check-image"
+                  src="./src/img/hero/check-1x.png"
+                  alt="check"
+                  width="24"
+                  height="25"
+              /></picture>
+              <span>Для перших 10 учасників:</span> можливість пройти
+              Діагностичний розбір вашого запиту
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="how-study">
+        <div class="container">
+          <h2 class="title">Як відбувається</h2>
+          <p class="subtitle">навчання</p>
+          <ul class="list">
+            <li class="list-item">
+              <span class="item-number">[ 01 ]</span>
+              <div class="text-box">
+                <p class="item-text">
+                  <span>Після оплати</span> ви миттєво отримуєте доступ до
+                  навчальної платформи і можете одразу приступити до навчання
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">[ 02 ]</span>
+              <div class="text-box">
+                <p class="item-text">
+                  <span>80% учасників</span> помічають покращення вже після
+                  другого уроку
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">[ 03 ]</span>
+              <div class="text-box">
+                <p class="item-text">
+                  <span>Усі уроки в записі,</span> доступні протягом 60 днів у
+                  зручний для вас час із будь якого пристрою
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">[ 04 ]</span>
+              <div class="text-box">
+                <p class="item-text">
+                  <span>Відео</span> завантажуються у зручному форматі
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">[ 05 ]</span>
+              <div class="text-box">
+                <p class="item-text">
+                  <span>Учасники курсу збільшили доходи</span> в середньому на
+                  30% протягом місяця
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">[ 06 ]</span>
+              <div class="text-box">
+                <p class="item-text">
+                  <span>Підтримка в Телеграм від Анни Аріста</span> у разі
+                  питань. Доступ до Telegram чату - постійно
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">відгуки</h2>
+            <div class="move-container">
+              <img src="./src/img/move-hand.svg" alt="move hand" width="21" />
+              <p class="move-text">гортай, щоб побачити більше</p>
+            </div>
+          </div>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-01-1x.png 1x,
+                      ./src/img/reviews/review-01-2x.png 2x
+                    "
+                    width="100%"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-01-1x.png"
+                    alt="review"
+                    width="100%"
+                    height="auto"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-02-1x.png 1x,
+                      ./src/img/reviews/review-02-2x.png 2x
+                    "
+                    width="100%"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-02-1x.png"
+                    alt="review"
+                    width="100%"
+                    height="auto"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-03-1x.png 1x,
+                      ./src/img/reviews/review-03-2x.png 2x
+                    "
+                    width="100%"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-03-1x.png"
+                    alt="review"
+                    width="100%"
+                    height="auto"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-04-1x.png 1x,
+                      ./src/img/reviews/review-04-2x.png 2x
+                    "
+                    width="100%"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-04-1x.png"
+                    alt="review"
+                    width="100%"
+                    height="auto"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-05-1x.png 1x,
+                      ./src/img/reviews/review-05-2x.png 2x
+                    "
+                    width="100%"
+                    height="auto" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-05-1x.png"
+                    alt="review"
+                    width="100%"
+                    height="auto"
+                /></picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <h2 class="title">Відповіді</h2>
+          <p class="subtitle">на запитання</p>
+          <div class="questions-container">
+            <ul class="questions-list list">
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <span class="question-number">[ 01 ]</span>
+                    <p class="questions-item-title">
+                      Чи підійде мені курс, якщо я ніколи не займалась духовними
+                      практиками?
+                    </p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      - Так, курс створений для всіх рівнів підготовки.
+                      Матеріали доступні і зрозумілі, навіть якщо ви вперше
+                      стикаєтеся з духовними практиками
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <span class="question-number">[ 02 ]</span>
+                    <p class="questions-item-title">
+                      Скільки часу потрібно на навчання?
+                    </p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      - Уроки тривають 15-20 хвилин. Ви навчаєтесь у своєму
+                      темпі.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <span class="question-number">[ 03 ]</span>
+                    <p class="questions-item-title">
+                      Я отримаю результати одразу після курсу?
+                    </p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      - Багато учасників помічають перші зміни вже під час
+                      проходження. Глибинні результати можуть проявитися через
+                      кілька тижнів, залежно від вашої роботи з матеріалами.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <span class="question-number">[ 04 ]</span>
+                    <p class="questions-item-title">Чи є гарантія?</p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      - Так, ми повертаємо гроші протягом 14 днів, якщо курс не
+                      відповідає вашим очікуванням.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <span class="question-number">[ 05 ]</span>
+                    <p class="questions-item-title">
+                      Що робити, якщо я не встигну пройти курс за 4 дні?
+                    </p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      - Ви матимете доступ до всіх матеріалів протягом 60 днів,
+                      щоб проходити навчання у зручному для вас темпі.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <div class="questions-title-box">
+                    <span class="question-number">[ 06 ]</span>
+                    <p class="questions-item-title">
+                      Що, якщо у мене виникнуть труднощі під час навчання?
+                    </p>
+                  </div>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      - Ви завжди можете звернутися за допомогою до Анни Аріста
+                      в Telegram-чаті
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="this-course">
+        <div class="container">
+          <div class="this-course-box">
+            <p class="this-course-title">Цей курс стане</p>
+            <p class="this-course-text">
+              до фінансової свободи, якщо ви прагнете не просто вирішити
+              проблеми, а докорінно змінити своє ставлення до грошей і
+              побудувати новий заможний рівень життя!
+            </p>
+          </div>
+          <div class="wrapper">
+            <p class="wrapper-title">отримати 90% знижки</p>
+            <p class="wrapper-text">
+              та стартовий пакет бонусів. Реєструйся зараз!
+            </p>
+            <p class="price"><span>1990 грн</span> 199 грн</p>
+            <a class="btn blue-btn" href="">Приєднатися</a>
+          </div>
+        </div>
+        <div class="marquee-container">
+          <p class="marquee-text">Не пропустіть свій шанс</p>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="fop-box">
+          <p class="name">фоп Пилипейко А.М.</p>
+          <!-- <p class="code">іпн 00000000</p> -->
+        </div>
+        <a class="mail-link" href="mailto:"
+          ><div class="mail-box">
+            <img src="./src/img/insta-black.svg" alt="mail" />
+            <p class="mail">Instagram</p>
+          </div></a
+        >
+        <a class="mail-link" href="mailto:"
+          ><div class="mail-box">
+            <img src="./src/img/mail.svg" alt="mail" />
+            <p class="mail">пошта</p>
+          </div></a
+        >
+        <div class="deals-box">
+          <a href="" target="_blank" rel="nofollow" class="deals-link public"
+            >публічна оферта</a
+          >
+          <a
+            href=""
+            target="_blank"
+            rel="nofollow"
+            class="deals-link confidence"
+            >політика конфідеційності</a
+          >
+        </div>
+        <a
+          class="dising-creator"
+          href="https://www.instagram.com/lllcku"
+          target="_blank"
+          rel="nofollow"
+          ><img src="./src/img/insta.svg" alt="insta" height="25" width="25" />
+          <p>
+            розробка сайту <br />
+            <span>lisa bardadym</span>
+          </p></a
+        >
+      </div>
+    </footer>
+    <script src="./src/js/changeDate.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/swiper.js" type="module"></script>
+    <script src="./src/js/questions.js" type="module"></script>
+    <script src="./src/js/marquee.js" type="module"></script>
   </body>
 </html>
