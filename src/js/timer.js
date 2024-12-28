@@ -76,13 +76,11 @@ function getEndOfDay() {
 function startNewDay() {
   var newDeadline = getEndOfDay();
   initializeClock('countdown-one', newDeadline);
-  initializeClock('countdown-two', newDeadline);
   // initializeClock('countdown-three', newDeadline);
 }
 
 var deadline = getEndOfDay();
 initializeClock('countdown-one', deadline);
-initializeClock('countdown-two', deadline);
 // initializeClock('countdown-three', deadline);
 
 // function getTimeRemaining(endtime) {
