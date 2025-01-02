@@ -33,6 +33,18 @@ body {
   max-width: 360px;
 }
 
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.07;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 /* header */
 
 .header {
@@ -153,6 +165,8 @@ body {
 
   max-width: 280px;
   margin: 0 auto 8px auto;
+
+  animation: pulseScale 1500ms infinite;
 }
 
 .btn.blue-btn {
@@ -1212,6 +1226,8 @@ body {
   position: relative;
 
   padding-bottom: 100px;
+
+  overflow: hidden;
 }
 
 .this-course-box {

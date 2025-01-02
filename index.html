@@ -376,12 +376,20 @@
               height="auto"
           /></picture>
           <div class="wrapper">
-            <img
-              class="wrapper-image"
-              src="./src/img/about-author/qoute-1x.png"
-              alt="decotaion"
-              width="23"
-            />
+            <picture
+              ><source
+                srcset="
+                  ./src/img/about-author/qoute-1x.png 1x,
+                  ./src/img/about-author/qoute-2x.png 2x
+                "
+                width="23"
+                height="auto" />
+              <img
+                class="wrapper-image"
+                src="./src/img/about-author/qoute-1x.png"
+                alt="decotaion"
+                width="23"
+            /></picture>
             <p class="wrapper-text">
               Моя місія - допомогти кожному відкрити свій шлях до фінансової
               свободи
