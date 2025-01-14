@@ -784,6 +784,8 @@ body {
   padding: 36px 15px;
   border-radius: 15px;
   background: #0053db;
+
+  margin-bottom: 20px;
 }
 
 .join-wrapper .join-title {
@@ -849,6 +851,25 @@ body {
 #kwiga-widget-1735755536000 {
   border: 12px solid white;
   border-radius: 20px;
+}
+
+.program .start-text {
+  color: #000;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 105%; /* 14.7px */
+  letter-spacing: -0.14px;
+
+  max-width: 270px;
+  margin: 0 auto 32px auto;
+}
+
+.program .start-text span {
+  color: #0053db;
+  font-weight: 450;
 }
 
 /* bonuses-again */
